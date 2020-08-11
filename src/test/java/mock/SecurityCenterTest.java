@@ -29,8 +29,9 @@ public class SecurityCenterTest {
 
     class mockDoorPanel extends DoorPanel{
         public boolean flag = false;
-        public void close() {
+        public Boolean close() {
             flag = true;
+            return flag;
         }
     }
 }
